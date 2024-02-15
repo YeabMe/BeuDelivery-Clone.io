@@ -1,0 +1,1064 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: black;
+    background: #fff;
+}
+
+
+/* Navbar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 50px;
+    z-index: 1000000;
+}
+
+header.sticky {
+    background: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    font-size: 1.3rem;
+    color: gray;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu li .joinUs {
+    border: none;
+    padding: 5px 16px;
+    font-size: 1.2rem;
+    color: #fff;
+    background: linear-gradient(90deg, #FF8022 5.03%, #FF2222 91.12%);
+    border-radius: 5px;
+    text-align: center;
+}
+.menu a{
+    text-decoration: none;
+    color: gray;
+}
+
+.menu a.active {
+    border-bottom: 5px solid #f01008;
+  }
+
+  
+.joinUs a{
+    text-decoration: none;
+    color: #fff;
+}
+/* Navbar End*/
+
+/* Home */
+.bg {
+    width: 90%;
+    height: 130vh;
+    background: url('../img/background.png') no-repeat;
+    background-size: 100% 100%;
+    margin-top: -1rem;
+    float: right;
+}
+
+span {
+    background: linear-gradient(90deg, #FF8022 5.03%, #FF2222 91.12%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home-title {
+    margin: 15rem 25rem 0rem -5rem;
+    font-size: 3rem;
+
+}
+
+.home-title p {
+    font-size: 1.3rem;
+    width: 510px;
+    line-height: 40px;
+    margin-top: 0.5rem;
+}
+
+.apps {
+    display: flex;
+}
+
+.appStore img {
+    width: 200px;
+    margin: 2rem 25rem 0rem -5rem;
+    height: 66px;
+}
+
+.playStore img {
+    width: 200px;
+    margin: 2rem 25rem 0rem -20rem;
+    height: 66px;
+}
+
+.banner {
+    background: linear-gradient(270deg, #FF2222 5.96%, rgba(236, 111, 19, 0.74) 89.08%);
+    width: 104%;
+    height: 20rem;
+    margin: 8rem 0rem 0rem -5rem;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.banner-title h1 {
+    display: inline-block;
+    margin: 4rem 0rem 2rem 3rem;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.banner-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0rem 2rem 0rem 6rem;
+    color: #fff;
+}
+
+.banner-items h1 {
+    font-size: 3rem;
+}
+
+.banner-items h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    font-weight: 400;
+}
+
+.banner-items p {
+    font-size: 1.5rem;
+    margin-left: -3rem;
+}
+
+.banner-items .two,
+.three,
+.four {
+    font-size: 1.5rem;
+    margin-left: -1rem;
+}
+
+/* Home End*/
+
+/* Sign up your Restaurant */
+.signUpRestaurant {
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-top: 27rem;
+}
+
+.discriptionSignup {
+    margin-left: 12rem;
+}
+
+
+.discriptionSignup p {
+    width: 320px;
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: rgb(76, 74, 74);
+    margin: 1rem 0rem 2rem -2rem;
+}
+
+.discriptionSignup h2 {
+    width: 320px;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 3rem;
+    color: #000;
+    margin-left: -2rem;
+}
+
+.discriptionSignup img {
+    max-width: 37%;
+    height: 100%;
+}
+
+.tryApp {
+    display: inline-flex;
+    margin-left: -13rem;
+    padding: 2rem 3rem;
+}
+
+.tryApp-img img {
+    margin-top: -2rem;
+    max-width: 47%;
+    height: 100%;
+    background: #fff8f8;
+    border-radius: 20px;
+    box-shadow: rgba(112, 112, 154, 0.2) 1px 18px 10px 1px;
+}
+
+.tryApp-contents h1 {
+    margin-left: -13rem;
+    margin-top: 0.5rem;
+    font-size: 2.5rem;
+}
+
+.tryApp-contents p {
+    margin: 1rem 0rem 2rem -13rem;
+    width: 330px;
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: rgb(76, 74, 74);
+}
+
+.tryApp-contents button {
+    margin-left: -13rem;
+    margin-top: 1.5rem;
+    color: rgb(255 34 34);
+    border: none;
+    background: white;
+    text-decoration: none;
+}
+
+.tryApp-contents a {
+    text-decoration: none;
+    color: #FF2222;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.singupArrow button {
+    margin: 1rem 0rem 1rem 10rem;
+    color: rgb(255 34 34);
+    border: none;
+    background: white;
+    text-decoration: none;
+}
+
+.singupArrow a {
+    text-decoration: none;
+    color: #FF2222;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 28px;
+    padding: 6px 0;
+}
+
+/* Sign up your Restaurant End*/
+
+
+/* Partenrs */
+.partnersTitle {
+    margin: 5rem 0 5rem 3rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+}
+
+
+.partners-container {
+    display: flex;
+    overflow: hidden;
+    background: #ffffff;
+    width: auto;
+    margin: 2rem;
+}
+
+.column {
+    flex: 1;
+}
+
+.row {
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.partner-item {
+    flex: 0 0 auto;
+    width: 230px;
+    height: 213px;
+    margin-right: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    border-radius: 21px;
+    border: none;
+    box-shadow: rgba(14, 30, 37, 0.12) 6px 4px 35px 10px, rgba(6, 18, 24, 0.32) 0px 0px 0px 0px;
+}
+
+.partner-item img {
+    object-fit: contain;
+    max-width: 80%;
+    height: auto;
+}
+
+/* Partenrs End*/
+
+/* Products */
+.pro{
+    margin: 11rem;
+}
+.products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0 7rem 3rem;
+    overflow: hidden;
+    height: 120vh;
+}
+
+.products-content {
+    margin: 1rem 3rem 0 1rem;
+}
+
+.products-content h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin: 1rem 0 0 0;
+}
+
+.products-content p {
+    margin: 2rem 0 0 0;
+    width: 360px;
+    line-height: 35px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: rgb(89, 89, 89);
+
+}
+
+.products-content button {
+    margin: 3rem 0;
+    padding: 0 56px;
+    height: 100px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(89.63deg, #ff8022 .27%, #f22 99.68%);
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.products-img img {
+    padding: 0 70px 0 0;
+    margin: -3rem 0 0 0;
+    max-width: 900px;
+}
+
+/* flavor */
+
+.flavor {
+    display: flex;
+    gap: 13rem;
+    margin-left: 8rem;
+}
+
+
+.flavor-img img {
+    margin-left: 5rem;
+    width: 90%;
+    height: 80%;
+}
+
+
+.flavor-contents h1 {
+    margin: 1rem 0 2rem 0;
+    font-size: 2.8rem;
+    width: 350px;
+    font-weight: 700;
+}
+
+.flavor-contents p {
+    width: 420px;
+    line-height: 35px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: rgb(89, 89, 89);
+    margin-bottom: 2rem;
+}
+
+.flavor-contents button {
+    margin: 3rem 0;
+    padding: 0 75px;
+    height: 100px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(89.63deg, #ff8022 .27%, #f22 99.68%);
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Products End */
+
+/* Service */
+.services {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20rem;
+    margin: 10rem 1rem;
+}
+
+.services-img img {
+    width: 100%;
+    margin: 1rem 4rem;
+}
+
+.services-content .title h1 {
+    margin: 1rem 0 5rem 0;
+    font-size: 2.8rem;
+    width: 340px;
+    font-weight: 700;
+}
+
+
+
+.services-item {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.services-item .icon {
+    margin: 0.5rem 0;
+}
+
+.services-item p {
+    width: 370px;
+    font-size: 0.9rem;
+}
+
+.services-item a {
+    text-decoration: none;
+    color: blue;
+}
+
+/* Service End */
+
+/* Images */
+.images img {
+    display: inline-flex;
+    float: right;
+    margin: -6rem 20rem 0 0;
+}
+
+.images1 img {
+    display: inline-flex;
+    float: right;
+}
+
+.images2 img {
+    margin: 0 0 6rem 20rem;
+}
+
+/* Images End */
+/* Contact */
+.contact {
+    display: flex;
+    gap: 5rem;
+}
+
+.contact-title {
+    margin: 7rem 0rem 0 3rem;
+}
+
+.first-line {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.line {
+    background: linear-gradient(270deg, #FF2222 5.67%, #FF8022 96.67%);
+    width: 100px;
+    height: 2px;
+    border-radius: 2px;
+}
+
+.contact-title p {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.contact-title h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 3rem 0 4rem 0;
+}
+
+.name {
+    margin: 1rem 0;
+}
+
+input {
+    border-left: #000;
+    border-right: #000;
+    border-top: #000;
+    outline: none;
+    width: 370px;
+    margin: 1rem 0;
+}
+
+
+.email {
+    margin: 1rem 0;
+}
+
+.message {
+    margin: 1rem 0 0 0;
+    font-family: inherit;
+    font-size: 100%;
+    color: inherit;
+    height: 50px;
+}
+
+.message input {
+    height: 200px;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.message input::placeholder {
+    padding: 0 2px 100px 0;
+    font-size: 1.1rem;
+}
+
+input:hover {
+    border-bottom: 2px solid #e41414;
+}
+
+.submit button {
+    margin: 13rem 0 0 0;
+    padding: 0px 42px;
+    width: 200px;
+    display: inline-flex;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(89.63deg, #ff8022 .27%, #f22 99.68%);
+    color: #fff;
+}
+
+.contact-img img {
+    margin: 10rem 0 0 0;
+    width: 800px;
+}
+
+/* Contact End */
+
+/* Info */
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: -3rem 8rem 10rem 0;
+}
+
+.more-info {
+    margin: 0 0 0 4rem;
+}
+
+.more-info h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.more-info p {
+    font-size: 1.3rem;
+    width: 430px;
+    margin: 0.5rem 0 0 0;
+    color: #000000;
+    font-weight: 400;
+}
+
+.know-us {
+    margin: -1rem 5rem 0 0;
+}
+
+.know-us h1 {
+    margin: 1rem 0 0 0;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.know-us p {
+    margin: 1rem 0 0 0;
+    width: 100px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 25px;
+    color: #333131;
+}
+
+.letus-help {
+    margin: 1rem 0 0 0;
+}
+
+.letus-help h1 {
+    width: 120px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: -0.5rem 0 0 0;
+}
+
+.letus-help p {
+    margin: 1rem 0 0 0;
+    width: 100px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 25px;
+    color: #333131;
+}
+
+/* Info End */
+
+/* Footer */
+hr {
+    color: #000;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.footer-logo {
+    margin: 0 2rem;
+}
+
+.footer-logo img {
+    width: 120px;
+}
+
+.social-items{
+  display: inline-block;
+  margin: 0 2rem;
+}
+
+.social-items a{
+    text-decoration: none;
+    color: #000;
+    margin-left: 1rem;
+}
+
+/* Media Query Responsive Design */
+
+@media (300px <= width <= 760px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        
+    }
+    .logo{
+        margin-left: auto;
+    }
+    .logo img{
+        width: 80px;
+    }
+    .menu{
+        display: none;
+    }
+
+    .bg{
+        width: 180%;
+        height: 140vh;
+        background-size: 143% 95%;
+        opacity: 0.8;
+    }
+
+    .home-title{
+        margin: 14rem 0rem 0rem 25rem;
+        font-size: 2rem;
+    }
+
+    .home-title h2{
+        font-size: 4rem;
+    }
+
+    .home-title p{
+        color: #242424;
+        width: 82%;
+        line-height: 30px;
+        font-size: 1.2rem;
+    }
+
+    .apps {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .appStore img {
+        margin: 2rem 0 1rem 25rem;
+    }
+    
+    .playStore img {
+        margin: 0 0 0 25rem;
+    }
+    
+   
+   .banner{
+    width: 53%;
+    height: 60vh;
+    margin: 8rem 0 0 25rem;
+    background: linear-gradient(270deg, #e90000 5.96%, rgba(255, 106, 0, 0.74) 89.08%);
+   }
+   .banner-title h1 {
+    display: inline-block;
+    margin: 1rem 0rem 2rem 1rem;
+    color: #fff;
+    font-size: 1.6rem;
+}
+   .banner-items{
+    display: grid;
+    grid-template-columns: repeat(2,200px);
+    margin: 0 0 0 3rem;
+   }
+
+   .banner-items h1 {
+    font-size: 3rem;
+}
+
+.banner-items h2 {
+    font-size: 1rem;
+    margin-top: 1rem;
+    font-weight: 400;
+}
+
+.banner-items p {
+    font-size: 1rem;
+    margin-left: -1rem;
+}
+
+.banner-items .two,
+.three,
+.four {
+    font-size: 1rem;
+    margin-left: -1rem;
+}
+
+/* SignUp  */
+.signUpRestaurant {
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.discriptionSignup {
+    margin-left: 5rem;
+}
+
+
+.discriptionSignup p {
+    width: 350px;
+    font-size: 1.3rem;
+    margin: 1rem 0rem 2rem 0;
+}
+
+.discriptionSignup .your{
+   margin: 0 5rem;
+}
+
+.discriptionSignup h2 {
+    width: 420px;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3rem;
+    color: #000;
+    margin-left: 1rem;
+}
+
+.discriptionSignup img {
+    max-width: 65%;
+    height: 100%;
+}
+
+.tryApp {
+    display: inline-flex;
+    margin-left: -2rem;
+    padding: 2rem 3rem;
+}
+
+.tryApp-img img {
+    margin-top: -2rem;
+    max-width: 57%;
+    height: 100%;
+    background: #fff8f8;
+    border-radius: 20px;
+    box-shadow: rgba(112, 112, 154, 0.2) 1px 18px 10px 1px;
+}
+
+.tryApp-contents h1 {
+    margin-left: -8rem;
+    margin-top: 0.5rem;
+    font-size: 2rem;
+}
+
+.tryApp-contents p {
+    margin: 1rem 0rem 2rem -8rem;
+    width: 220px;
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: rgb(76, 74, 74);
+}
+
+.tryApp-contents button {
+    margin-left: -7.5rem;
+    margin-top: -1rem;
+}
+
+.tryApp-contents a {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.singupArrow button {
+    position: absolute;
+    margin: -34rem 0rem 1rem 5rem;
+}
+
+.singupArrow svg{
+    position: absolute;
+    margin: -34rem 0rem 1rem 23.5rem;
+}
+
+.partnersTitle {
+    font-size: 1.5rem;
+}
+
+/* Products */
+.pro{
+    margin: 8rem;
+}
+.products {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    height: 160vh;
+    width: 480px;
+    margin: 0;
+}
+
+.products-content {
+    margin: 0 0 0 0;
+    
+}
+.products-content h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 3rem 0 0 0;
+    width: 400px;
+}
+
+.products-content p {
+    margin: 2rem 0 0 0;
+    width: 430px;
+    line-height: 35px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: rgb(124, 122, 122);
+
+}
+
+.products-content .price{
+    margin-left: 7rem;
+}
+
+.products-content button {
+    margin: 3rem 0 0 6rem;
+    padding: 0 22px;
+    height: 80px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.products-img img {
+    padding: 0 0px 0 0;
+    width: 450px;
+    height: 500px;
+}
+
+/* flavor */
+
+.flavor {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-left: 2rem;
+}
+.flavor-contents{
+   
+}
+
+
+.flavor-contents h1 {
+    margin: 0 0 2rem 3rem;
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+.flavor-contents p {
+    width: 400px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: rgb(154, 151, 151);
+    text-align: center;
+    line-height: 30px;
+}
+
+.flavor-contents button {
+    margin: 1rem 8rem;
+    padding: 0 22px;
+    height: 75px;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* Products End */
+
+/* Service */
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin: 5rem 1rem;
+}
+
+.services-content .title h1 {
+    margin: -4rem 0 3rem 0;
+    font-size: 2rem;
+    width: 460px;
+}
+
+
+/* Service End */
+
+/* Images */
+.images img {
+    display: none;
+}
+
+.images1 img {
+   display: none;
+}
+
+.images2 img {
+    display: none;
+}
+
+/* Images End */
+/* Contact */
+.contact {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.contact-title {
+    margin: 7rem 0rem 0 1rem;
+}
+
+.first-line {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+.submit button {
+    margin: 13rem 0 0 0;
+    padding: 8px 25px;
+    width: 140px;
+    display: inline-flex;
+    font-size: 1rem;
+}
+
+.submit svg{
+    width: 30px;
+}
+
+.contact-img img {
+    margin: -3rem 0 0 0;
+    width: 455px;
+}
+
+/* Contact End */
+
+/* Info */
+.info {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 1rem 10rem 1rem;
+    align-items: flex-start;
+}
+
+.more-info {
+    margin:0;
+}
+/* Info End */
+
+/* Footer */
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    margin: 1rem;
+}
+
+.footer-logo {
+    margin: 0;
+}
+
+.footer-logo img {
+    width: 180px;
+}
+
+.social-items{
+  margin: 0;
+}
+
+ 
+    
+    
+}
